@@ -1,0 +1,61 @@
+.outside-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  background: url("../assets/bg-bpc.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+:global(.ant-btn-primary):hover {
+  background-color: lightgreen !important;
+  border-color: lightgreen !important;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10rem;
+  width: 100%;
+}
+
+.login-container {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2.7em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.separator {
+  width: 150px;
+  height: 4px;
+  background-color: green;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .checkbox-container {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
